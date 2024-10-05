@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+  font-family: Montserrat, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(15, 21, 36);
+  width: 100%;
+  height: fit-content;
+}
+
+.NavBar{
+  position: relative;
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  border-bottom: 2px solid rgb(51, 65, 85);
+  background-color: rgb(15, 21, 36);
+}
+
+.left-nav-buttons{
+  display: flex;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.navbaricon{
+    cursor: pointer;
+    width: clamp(1.875rem, 0.893vw + 1.696rem, 3.125rem);
+}
+
+.aboutme-div{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  height: 450px;
+  border-bottom: 3px solid rgb(51, 65, 85);
+}
+
+.aboutme-img{
+  position: absolute;
+  width: clamp(6.25rem, 8.929vw + 4.464rem, 18.75rem);
+  left: 10%;
+  bottom: 0;
+}
+
+.aboutme-paragraph{
+  font-weight: 400;
+  position: absolute;
+  text-align: center;
+  font-family: Montserrat, sans-serif;
+  color: aliceblue;
+  font-size: clamp(0.625rem, 0.67vw + 0.491rem, 1.563rem);
+  width: 100%;
+}
+
+.projects-div{
+  /* position: absolute; */
+  /* padding: 0% 10%; */
+  /* width: 100%; */
+}
+
+.projects-header{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: aliceblue;
+}
+
+.description-div{
+  height: 200px;
+  overflow: scroll;
+  scrollbar-width: none;
+}
+
+.project-card{
+  width: clamp(17.5rem, 4.643vw + 16.571rem, 24rem);
+}
