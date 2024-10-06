@@ -18,9 +18,12 @@ export default {
       screens: {
         'mdl': '880px',
         'lpl': '1440px',
+        'bigl': '1880px',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated')
+  ],
 }
 

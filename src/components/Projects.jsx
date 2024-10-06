@@ -12,8 +12,8 @@ const Projects = () => {
     const cub3d_desc = "cub3D is a 3D game engine project inspired by Wolfenstein 3D, built using ray-casting techniques. It allows for rendering 3D environments from 2D maps, handling textures, player movement, and basic collision detection. The project focuses on low-level graphics programming and provides an introduction to building game engines from scratch.";
 
     return (
-        <div className="text-center">
-            <h3 className="pt-12 text-4xl font-extrabold text-white">
+        <div className="text-center overflow-hidden">
+            <h3 className="pt-12 text-4xl font-extrabold text-white animate-wiggle animate-infinite animate-duration-[4000ms]">
                 Projects
             </h3>
             <div className="flex justify-center w-full">

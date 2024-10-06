@@ -21,8 +21,8 @@ const Marquee = () => {
     const iconsArray = [cplus, clang, git, makefile, python, htmllogo, css, javascript, reactlogo, tailwind, linux, bash, django, docker, nodejs, mongodb];
 
     return (
-        <div className="text-center">
-            <h3 className="pt-7 text-4xl font-extrabold text-white">
+        <div className="text-center overflow-hidden">
+            <h3 className="pt-7 text-4xl font-extrabold text-white animate-wiggle animate-wiggle animate-infinite animate-duration-[4000ms]">
                 Skills
             </h3>
             <div className="flex items-center">
