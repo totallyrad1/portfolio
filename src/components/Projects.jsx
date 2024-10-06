@@ -12,11 +12,16 @@ const Projects = () => {
     const cub3d_desc = "cub3D is a 3D game engine project inspired by Wolfenstein 3D, built using ray-casting techniques. It allows for rendering 3D environments from 2D maps, handling textures, player movement, and basic collision detection. The project focuses on low-level graphics programming and provides an introduction to building game engines from scratch.";
 
     return (
-        <div className="flex justify-center w-full">
-            <div className="projects-div grid lpl:grid-cols-3 mdl:grid-cols-2 sm:grid-cols-1 gap-10">
-                <ProjectCard name={"Webserv"} githublink={"https://github.com/totallyrad1/Webserv"} description={webserv_desc} projectimg={"https://miro.medium.com/v2/resize:fit:1400/format:webp/1*age3Dgxl8sz6LZgDIwOSNQ.png"} icons={[cplus, htmllogo, http, makefile]} />
-                <ProjectCard name={"MiniShell"} githublink={"https://github.com/totallyrad1/Minishell"} description={minishell_desc} projectimg={"https://miro.medium.com/v2/da:true/resize:fit:1200/0*NsEzq9V2YGD6ocBH"} icons={[clang, makefile]} />
-                <ProjectCard name={"Cub3d"} githublink={"https://github.com/totallyrad1/cub3D"} description={cub3d_desc} projectimg={"https://miro.medium.com/v2/resize:fit:1200/1*25dBmsNUQps5geRZZZy-uQ.gif"} icons={[clang, makefile]}/>
+        <div className="text-center">
+            <h3 className="pt-12 text-5xl font-extrabold dark:text-white">
+                Projects
+            </h3>
+            <div className="flex justify-center w-full">
+                <div className="projects-div grid lpl:grid-cols-3 mdl:grid-cols-2 sm:grid-cols-1 gap-10">
+                    <ProjectCard name={"Webserv"} githublink={"https://github.com/totallyrad1/Webserv"} description={webserv_desc} projectimg={"https://miro.medium.com/v2/resize:fit:1400/format:webp/1*age3Dgxl8sz6LZgDIwOSNQ.png"} icons={[cplus, htmllogo, http, makefile]} />
+                    <ProjectCard name={"MiniShell"} githublink={"https://github.com/totallyrad1/Minishell"} description={minishell_desc} projectimg={"https://miro.medium.com/v2/da:true/resize:fit:1200/0*NsEzq9V2YGD6ocBH"} icons={[clang, makefile]} />
+                    <ProjectCard name={"Cub3d"} githublink={"https://github.com/totallyrad1/cub3D"} description={cub3d_desc} projectimg={"https://miro.medium.com/v2/resize:fit:1200/1*25dBmsNUQps5geRZZZy-uQ.gif"} icons={[clang, makefile]}/>
+                </div>
             </div>
         </div>
     );
