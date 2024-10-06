@@ -90,3 +90,7 @@ body {
 .project-card{
   width: clamp(17.5rem, 4.643vw + 16.571rem, 24rem);
 }
+
+.navbar-icon{
+  width: 30px;
+}

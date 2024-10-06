@@ -1,15 +1,21 @@
-import icon42 from "../assets/totallyrad-textgif-unscreen.gif"
+import icon from "../assets/totallyrad.gif"
+import github from "../assets/25231.png"
+import linkedin from "../assets/linkedin-icon.svg"
 
 const NavBar = () => {
     return (
         <div className="NavBar">
-            <img src={icon42} className="navbaricon" />
+            <img src={icon} className="navbaricon" />
             <div className="left-nav-buttons">
                 <a href="https://github.com/totallyrad1" target="blank">
-                    <button>Github</button>
+                    <button>
+                        <img src={github} className="navbar-icon"></img>
+                    </button>
                 </a>
                 <a href="https://www.linkedin.com/in/asaad-naji-90423429a/" target="blank">
-                    <button>linkedin</button>
+                    <button>
+                        <img src={linkedin} className="navbar-icon"></img>
+                    </button>
                 </a>
             </div>
         </div>

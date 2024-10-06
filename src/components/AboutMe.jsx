@@ -1,5 +1,3 @@
-import rad from "../assets/rad.png"
-
 const AboutMe = () => {
     return (<div className="flex aboutme-div items-center">
         {/* <img src={rad} className="aboutme-img"/> */}
