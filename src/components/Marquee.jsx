@@ -22,7 +22,7 @@ const Marquee = () => {
 
     return (
         <div className="text-center">
-            <h3 className="pt-7 text-5xl font-extrabold text-white">
+            <h3 className="pt-7 text-4xl font-extrabold text-white">
                 Skills
             </h3>
             <div className="flex items-center">

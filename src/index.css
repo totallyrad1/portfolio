@@ -64,7 +64,6 @@ body {
   color: aliceblue;
   font-size: clamp(0.625rem, 0.67vw + 0.491rem, 1.563rem);
   width: 95%;
-  padding: 60px;
 }
 
 /* .projects-div{ */

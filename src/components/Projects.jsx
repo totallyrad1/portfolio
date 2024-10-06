@@ -13,7 +13,7 @@ const Projects = () => {
 
     return (
         <div className="text-center">
-            <h3 className="pt-12 text-5xl font-extrabold text-white">
+            <h3 className="pt-12 text-4xl font-extrabold text-white">
                 Projects
             </h3>
             <div className="flex justify-center w-full">
