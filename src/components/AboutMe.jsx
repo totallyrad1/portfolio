@@ -1,5 +1,5 @@
 const AboutMe = () => {
-    return (<div className="flex aboutme-div items-center">
+    return (<div className="aboutme-div">
         {/* <img src={rad} className="aboutme-img"/> */}
         <div className="aboutme-paragraph">
             <p>Hi! I’m <a href="https://www.linkedin.com/in/asaad-naji-90423429a/" target="blank"><strong>Asaad Naji </strong></a>a 19-year-old Moroccan currently studying at 1337.</p>

@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        '2xl': '1536px',
+        'mdl': '880px',
+        'lpl': '1440px',
       },
     },
   },
