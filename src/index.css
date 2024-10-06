@@ -45,7 +45,7 @@ body {
   gap: 10px;
   text-align: center;
   position: relative;
-  width: 95%;
+  width: 100%;
   height: 450px;
   border-bottom: 3px solid rgb(51, 65, 85);
 }
@@ -64,7 +64,7 @@ body {
   font-family: Montserrat, sans-serif;
   color: aliceblue;
   font-size: clamp(0.625rem, 0.67vw + 0.491rem, 1.563rem);
-  width: 100%;
+  width: 95%;
 }
 
 .projects-div{
