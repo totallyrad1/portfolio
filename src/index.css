@@ -88,7 +88,7 @@ body {
 }
 
 .project-card{
-  /* width: clamp(17.5rem, 4.643vw + 16.571rem, 24rem); */
+  width: 350px;
 }
 
 .navbar-icon{
