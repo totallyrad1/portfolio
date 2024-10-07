@@ -7,7 +7,7 @@ const ProjectCard = ({name, githublink, description, projectimg, icons}) => {
               <img src={projectimg} alt="card-image" />
             </div>
             <div className="p-4">
-              <div className="flex items-center mb-2">
+              <div className=" mb-2">
                 <h6 className="text-slate-800 text-xl font-semibold">
                   {name}
                 </h6>
