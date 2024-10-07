@@ -23,7 +23,7 @@ const Skills = () => {
     const iconsArray = [cplus, clang, git, makefile, python, htmllogo, css, javascript, reactlogo, tailwind, linux,socketio, bash, django, docker, nodejs, mongodb];
     
     return (
-        <div className="text-center overflow-hidden">
+        <div className="text-center overflow-hidden ">
             <h3 className="text-4xl font-extrabold text-black animate-wiggle animate-infinite animate-duration-[4000ms]">
                 Skills
             </h3>
