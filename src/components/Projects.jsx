@@ -28,7 +28,7 @@ const Projects = () => {
 
     return (
         <div className="text-center overflow-hidden">
-            <h3 className="pt-7 text-4xl font-extrabold text-white animate-wiggle animate-infinite animate-duration-[4000ms]">
+            <h3 className="py-7 text-4xl font-extrabold text-white animate-wiggle animate-infinite animate-duration-[4000ms]">
                 Projects
             </h3>
             <div className="flex justify-center w-full">

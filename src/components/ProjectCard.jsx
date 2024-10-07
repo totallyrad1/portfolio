@@ -1,7 +1,7 @@
 
 const ProjectCard = ({name, githublink, description, projectimg, icons}) => {
     return (
-      <div className="transform hover:scale-110 hover:pt-7 transition-transform duration-300">
+      <div className="transform hover:scale-110 transition-transform duration-300">
         <div className="project-card relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 h-fit flex-grow animate-flip-down animate-duration-[1000ms]">
             <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
               <img src={projectimg} alt="card-image" />
