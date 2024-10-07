@@ -16,6 +16,10 @@ export default {
         }
       },
       screens: {
+        'smallest': '320px',
+        'sm1': "480px",
+        'sm2': "560px",
+        'md1': "640px",
         'mdl': '880px',
         'lpl': '1440px',
         'bigl': '1880px',
