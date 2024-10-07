@@ -12,10 +12,15 @@ function App() {
     <>
       <NavBar />
       <div>
-        <AboutMe />
-        <Skills />
-        {/* <Marquee /> */}
-        <Projects />
+        <section className='bg-black'>
+          <AboutMe />
+        </section>
+        <section className='bg-white'>
+          <Skills />
+        </section>
+        <section className='bg-black'>
+          <Projects />
+        </section>
       </div>
     </>
 

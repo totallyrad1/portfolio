@@ -9,7 +9,7 @@ const NavBar = () => {
             <div className="left-nav-buttons">
                 <a href="https://github.com/totallyrad1" target="blank">
                     <button>
-                        <img src={github} className="navbar-icon"></img>
+                        <img src={"https://img.icons8.com/?size=100&id=12599&format=png&color=FFFFFF"} className="navbar-icon"></img>
                     </button>
                 </a>
                 <a href="https://www.linkedin.com/in/asaad-naji-90423429a/" target="blank">
