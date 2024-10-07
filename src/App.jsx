@@ -4,6 +4,9 @@ import AboutMe from './components/AboutMe'
 import Projects from './components/Projects'
 import Marquee from './components/Marquee'
 import Skills from './components/Skills'
+import Reveal from './components/Reveal'
+import WhiteCurve from './components/WhiteCurve'
+import BlackCurve from './components/BlackCurve'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -13,13 +16,21 @@ function App() {
       <NavBar />
       <div>
         <section className='bg-black'>
-          <AboutMe />
+          <Reveal>
+            <AboutMe />
+          </Reveal>
+          <WhiteCurve />
         </section>
         <section className='bg-white'>
-          <Skills />
+          <Reveal>
+            <Skills />
+          </Reveal>
+          <BlackCurve />
         </section>
         <section className='bg-black'>
-          <Projects />
+          <Reveal>
+            <Projects />
+          </Reveal>
         </section>
       </div>
     </>
