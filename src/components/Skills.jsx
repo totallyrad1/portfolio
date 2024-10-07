@@ -17,6 +17,7 @@ import django from "../assets/django.png"
 import nodejs from "../assets/nodejs.png"
 import mongodb from "../assets/mongodb.png"
 import socketio from "../assets/socketio.png"
+import Reveal from "./Reveal";
 
 const Skills = () => {
     
@@ -24,18 +25,24 @@ const Skills = () => {
     
     return (
         <div className="text-center overflow-hidden">
+            <Reveal>
             <h3 className="text-4xl font-extrabold text-black animate-wiggle animate-infinite animate-duration-[4000ms]">
                 Skills
             </h3>
-            <div className="flex py-12 justify-center w-full">
-                <div className="projects-div grid lpl:grid-cols-9 mdl:grid-cols-6 sm:grid-cols-3 smallest:grid-cols-3 gap-10">
-                    {iconsArray && iconsArray.map((icon, index)=>{
-                        return  <span className="text-4xl mx-4" key={index}>
-                                 <img src={icon} className="marquee-element transform hover:scale-125 transition-transform duration-300"/>
-                                </span>
-                    })}
+            </Reveal>
+                <div className="flex py-12 justify-center w-full">
+                    <div className="projects-div grid lpl:grid-cols-9 mdl:grid-cols-7 sm:grid-cols-5 smallest:grid-cols-3 gap-10 w-full">
+                        {iconsArray && iconsArray.map((icon, index)=>{
+                            return  (
+                                <Reveal rad={true}>
+                                    <span className="text-4xl mx-0" key={index}>
+                                        <img src={icon} className="marquee-element transform hover:scale-100 transition-transform duration-300"/>
+                                        </span>
+                                </Reveal>
+                                )
+                        })}
+                    </div>
                 </div>
-            </div>
         </div>
     );
 }

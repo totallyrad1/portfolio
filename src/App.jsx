@@ -16,21 +16,15 @@ function App() {
       <NavBar />
       <div>
         <section className='bg-black'>
-          <Reveal>
             <AboutMe />
-          </Reveal>
           <WhiteCurve />
         </section>
         <section className='bg-white'>
-          <Reveal>
-            <Skills />
-          </Reveal>
+            <Skills className/>
           <BlackCurve />
         </section>
         <section className='bg-black'>
-          <Reveal>
             <Projects />
-          </Reveal>
         </section>
       </div>
     </>

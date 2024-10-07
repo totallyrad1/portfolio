@@ -17,6 +17,7 @@ import django from "../assets/django.png"
 import nodejs from "../assets/nodejs.png"
 import mongodb from "../assets/mongodb.png"
 import socketio from "../assets/socketio.png"
+import Reveal from "./Reveal";
 
 const Projects = () => {
 
@@ -28,9 +29,11 @@ const Projects = () => {
 
     return (
         <div className="text-center overflow-hidden w-full">
-            <h3 className="py-7 text-4xl font-extrabold text-white animate-wiggle animate-infinite animate-duration-[4000ms]">
-                Projects
-            </h3>
+            <Reveal>
+                <h3 className="py-7 text-4xl font-extrabold text-white animate-wiggle animate-infinite animate-duration-[4000ms]">
+                    Projects
+                </h3>
+            </Reveal>
             <div className="flex justify-center w-full">
                 <div className="projects-div grid lpl:grid-cols-3 mdl:grid-cols-2 sm:grid-cols-1 gap-10">
                     <ProjectCard name={"Webserv"} githublink={"https://github.com/totallyrad1/Webserv"} description={webserv_desc} projectimg={"https://miro.medium.com/v2/resize:fit:1400/format:webp/1*age3Dgxl8sz6LZgDIwOSNQ.png"} icons={[cplus, htmllogo, http, makefile]} />
