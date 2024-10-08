@@ -7,6 +7,15 @@ const NavBar = () => {
         <div className="NavBar">
             <img src={icon} className="navbaricon" />
             <div className="left-nav-buttons">
+                <button>About Me
+                </button>
+                <button>
+                    Skills
+                </button>
+                <button>Projects
+                </button>
+            </div>
+            <div className="left-nav-buttons">
                 <a href="https://github.com/totallyrad1" target="blank">
                     <button>
                         <img src={"https://img.icons8.com/?size=100&id=12599&format=png&color=FFFFFF"} className="navbar-icon"></img>
