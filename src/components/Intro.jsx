@@ -5,7 +5,7 @@ const Intro = () => {
     return (
         <div className="flex justify-center text-center grid mdl:grid-cols-2 smallest:grid-cols-1">
             <Reveal>
-                <h1 className="intro-title text-white p-0 mdl:pt-36 sm1:p-0">RaD/.</h1>
+                <h1 className="intro-title text-white p-0">RaD/.</h1>
             </Reveal>
             <Reveal>
                 <img src={rad} className="intro-img p-0"></img>
