@@ -2,23 +2,28 @@ import icon from "../assets/totallyrad.gif"
 import github from "../assets/25231.png"
 import linkedin from "../assets/linkedin.png"
 
-const NavBar = () => {
+const NavBar = ({introRef, aboutMeRef, projectsRef}) => {
+
+    const scrollToElement = (elemenet) =>{
+        scrollTo({
+            top: elemenet.current.offsetTop,
+            behavior: "smooth"
+        });
+    };
+
     return (
         <div className="NavBar">
             <img src={icon} className="navbaricon" />
             <div className="left-nav-buttons">
-                {/* <button>
+                <button onClick={() => scrollToElement(introRef)}>
                     Intro
                 </button>
-                <button>About Me
+                <button onClick={() => scrollToElement(aboutMeRef)}>About me
                 </button>
-                <button>
-                    Skills
+                <button onClick={() => scrollToElement(projectsRef)}>Projects
                 </button>
-                <button>Projects
-                </button> */}
             </div>
-            <div className="left-nav-buttons">
+            {/* <div className="left-nav-buttons">
                 <a href="https://github.com/totallyrad1" target="blank">
                     <button>
                         <img src={"https://img.icons8.com/?size=100&id=12599&format=png&color=FFFFFF"} className="navbar-icon"></img>
@@ -29,7 +34,7 @@ const NavBar = () => {
                         <img src={linkedin} className="navbar-icon"></img>
                     </button>
                 </a>
-            </div>
+            </div> */}
         </div>
     );
 }
