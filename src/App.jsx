@@ -8,11 +8,13 @@ import Reveal from './components/Reveal'
 import WhiteCurve from './components/WhiteCurve'
 import BlackCurve from './components/BlackCurve'
 import Intro from './components/Intro'
+import BackToTop from './components/BackToTop'
 
 function App() {
   return (
     <>
       <NavBar />
+      <BackToTop />
       <div>
         <section className='bg-black p-0 m-0'>
           <Intro />

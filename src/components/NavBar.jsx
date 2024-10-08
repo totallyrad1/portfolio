@@ -1,6 +1,6 @@
 import icon from "../assets/totallyrad.gif"
 import github from "../assets/25231.png"
-import linkedin from "../assets/linkedin-icon.svg"
+import linkedin from "../assets/linkedin.png"
 
 const NavBar = () => {
     return (
