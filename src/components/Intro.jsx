@@ -3,9 +3,11 @@ import Reveal from "./Reveal";
 
 const Intro = () => {
     return (
-        <div className="flex justify-center text-center grid mdl:grid-cols-2 smallest:grid-cols-1">
+        <div className="flex justify-center items-center text-center grid md1:grid-cols-2 df:grid-cols-1">
             <Reveal>
-                <h1 className="intro-title text-white p-0">RaD/.</h1>
+                <div>
+                    <h1 className="intro-title text-white p-0">RaD/.</h1>
+                </div>
             </Reveal>
             <Reveal>
                 <img src={rad} className="intro-img p-0"></img>

@@ -16,6 +16,7 @@ export default {
         }
       },
       screens: {
+        'df': "0px",
         'smallest': '320px',
         'sm1': "480px",
         'sm2': "560px",
