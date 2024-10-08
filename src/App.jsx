@@ -7,20 +7,20 @@ import Skills from './components/Skills'
 import Reveal from './components/Reveal'
 import WhiteCurve from './components/WhiteCurve'
 import BlackCurve from './components/BlackCurve'
+import Intro from './components/Intro'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <NavBar />
       <div>
-        <section className='bg-black'>
-            <AboutMe />
+        <section className='bg-black p-0 m-0'>
+          <Intro />
           <WhiteCurve />
         </section>
         <section className='bg-white'>
-            <Skills className/>
+            <AboutMe />
+            <Skills />
           <BlackCurve />
         </section>
         <section className='bg-black'>
