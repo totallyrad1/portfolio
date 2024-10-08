@@ -19,20 +19,18 @@ function App() {
     <>
       <NavBar introRef={introRef} aboutMeRef={aboutMeRef} projectsRef={projectsRef}/>
       <BackToTop />
-      <div>
         <section className='bg-black p-0 m-0' ref={introRef}>
           <Intro aboutMeRef={aboutMeRef}/>
-          <WhiteCurve />
+          {/* <WhiteCurve /> */}
         </section>
         <section className='bg-white' ref={aboutMeRef}>
             <AboutMe />
             <Skills />
-          <BlackCurve />
+          {/* <BlackCurve /> */}
         </section>
         <section className='bg-black' ref={projectsRef}>
             <Projects />
         </section>
-      </div>
     </>
 
   )

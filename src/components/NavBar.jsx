@@ -6,6 +6,7 @@ import { useEffect, useState } from "react"
 
 const NavBar = ({introRef, aboutMeRef, projectsRef}) => {
     const [activeSection, setActiveSection] = useState("Intro");
+    const [navBarClasses, setNavBarClasses] = useState("NavBar")
 
     const checkInView = () => {
         const introRect = introRef.current.getBoundingClientRect();
@@ -37,10 +38,13 @@ const NavBar = ({introRef, aboutMeRef, projectsRef}) => {
 
     useEffect(()=>{
         document.title = activeSection;
+        setNavBarClasses(activeSection === "About Me" ? "NavBar black-nav" : "NavBar white-nav");
     }, [activeSection])
 
+
+
     return (
-        <div className="NavBar">
+        <div className={navBarClasses}>
             <img src={icon} className="navbaricon" />
             <div className="left-nav-buttons">
                 <button className={activeSection  === "Intro" ? "underline" : ""} onClick={() => scrollTo({

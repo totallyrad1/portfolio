@@ -1,4 +1,4 @@
-import { motion, useInView, useAnimation } from "framer-motion";
+import { motion, useInView, useAnimation, easeInOut } from "framer-motion";
 import { useRef, useEffect } from "react";
 
 const Reveal = ({children, rad = false}) => {
@@ -29,7 +29,7 @@ const Reveal = ({children, rad = false}) => {
                 }}
                 initial="hidden"
                 animate={mainControls}
-                transition={{duration: 0.5, delay: 0.10}}
+                transition={{duration: 0.5, delay: 0.1}}
             >
                 {children}
             </motion.div>
