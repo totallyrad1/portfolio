@@ -15,7 +15,10 @@ const NavBar = ({introRef, aboutMeRef, projectsRef}) => {
         <div className="NavBar">
             <img src={icon} className="navbaricon" />
             <div className="left-nav-buttons">
-                <button onClick={() => scrollToElement(introRef)}>
+                <button onClick={() => scrollTo({
+                    top: 0,
+                    behavior: "smooth"
+                })}>
                     Intro
                 </button>
                 <button onClick={() => scrollToElement(aboutMeRef)}>About me

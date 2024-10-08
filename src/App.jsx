@@ -11,16 +11,16 @@ import Intro from './components/Intro'
 import BackToTop from './components/BackToTop'
 
 function App() {
-  const introRef = useRef(null);
+  // const introRef = useRef(null);
   const aboutMeRef = useRef(null);
   const projectsRef = useRef(null);
 
   return (
     <>
-      <NavBar introRef={introRef} aboutMeRef={aboutMeRef} projectsRef={projectsRef}/>
+      <NavBar aboutMeRef={aboutMeRef} projectsRef={projectsRef}/>
       <BackToTop />
       <div>
-        <section className='bg-black p-0 m-0' ref={introRef}>
+        <section className='bg-black p-0 m-0'>
           <Intro aboutMeRef={aboutMeRef}/>
           <WhiteCurve />
         </section>

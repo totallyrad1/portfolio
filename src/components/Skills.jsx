@@ -34,8 +34,8 @@ const Skills = () => {
                     <div className="projects-div grid lpl:grid-cols-9 mdl:grid-cols-7 sm:grid-cols-5 smallest:grid-cols-3 gap-10 w-full">
                         {iconsArray && iconsArray.map((icon, index)=>{
                             return  (
-                                <Reveal rad={true}>
-                                    <span className="text-4xl mx-0" key={index}>
+                                <Reveal rad={true} key={index}>
+                                    <span className="text-4xl mx-0">
                                         <img src={icon} className="marquee-element transform hover:scale-100 transition-transform duration-300"/>
                                         </span>
                                 </Reveal>
