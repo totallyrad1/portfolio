@@ -35,6 +35,10 @@ const NavBar = ({introRef, aboutMeRef, projectsRef}) => {
         });
     };
 
+    useEffect(()=>{
+        document.title = activeSection;
+    }, [activeSection])
+
     return (
         <div className="NavBar">
             <img src={icon} className="navbaricon" />
