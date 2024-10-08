@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 const ProjectCard = ({name, githublink, description, projectimg, icons}) => {
     return (
       <Reveal>
-
+        <a href={githublink}>
         <div className="transform hover:md1:scale-110 transition-transform duration-300">
           <div className="project-card relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 h-fit flex-grow animate-flip-down animate-duration-[1000ms]">
               <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
@@ -29,13 +29,9 @@ const ProjectCard = ({name, githublink, description, projectimg, icons}) => {
                       </button>);
                   })}
               </div>
-              <div className="px-4 pb-4 pt-0 mt-2">
-                <a href={githublink} target="blank"><button className="w-full rounded-md bg-slate-800 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-slate-700 focus:shadow-none active:bg-slate-700 hover:bg-slate-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                  Source Code
-                </button></a>
-              </div>
           </div>  
         </div>
+        </a>
       </Reveal>
     );
 }

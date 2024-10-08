@@ -28,7 +28,7 @@ const Projects = () => {
 
 
     return (
-        <div className="text-center overflow-hidden w-full">
+        <div className="text-center overflow-hidden w-full pb-3">
             <Reveal>
                 <h3 className="py-7 text-4xl font-extrabold text-white animate-wiggle animate-infinite animate-duration-[4000ms]">
                     Projects
