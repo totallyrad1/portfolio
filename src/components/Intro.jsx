@@ -1,4 +1,4 @@
-import rad from "../assets/output.png"
+import rad from "../assets/output-min.png"
 import Reveal from "./Reveal";
 
 const Intro = ({aboutMeRef}) => {
