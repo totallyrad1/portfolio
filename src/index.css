@@ -200,3 +200,47 @@ section{
   border-bottom: 1px solid black;
   color: black;
 }
+
+.footer-div{
+  color: black
+}
+
+.white-triangle {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.white-triangle svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 87px;
+}
+
+.white-triangle .shape-fill {
+  fill: #FFFFFF;
+}
+
+.black-triangle {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.black-triangle svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 87px;
+}
+
+.black-triangle .shape-fill {
+  fill: #0E0E0E;
+}

@@ -6,7 +6,7 @@ const Intro = ({aboutMeRef}) => {
         <div className="flex justify-center items-center text-center grid md1:grid-cols-2 df:grid-cols-1 pt-12 mdl:p-0">
             <Reveal>
                 <div>
-                    <h1 className="intro-title text-white">RaD/.</h1>
+                    <h1 className="intro-title text-white">./RaD</h1>
                 </div>
             </Reveal>
             <Reveal>

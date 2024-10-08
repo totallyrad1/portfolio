@@ -34,7 +34,7 @@ const Projects = () => {
                     Projects
                 </h3>
             </Reveal>
-            <div className="flex justify-center w-full">
+            <div className="flex justify-center w-full py-12">
                 <div className="projects-div grid lpl:grid-cols-3 mdl:grid-cols-2 sm:grid-cols-1 gap-10">
                     <ProjectCard name={"Webserv"} githublink={"https://github.com/totallyrad1/Webserv"} description={webserv_desc} projectimg={"https://miro.medium.com/v2/resize:fit:1400/format:webp/1*age3Dgxl8sz6LZgDIwOSNQ.png"} icons={[cplus, htmllogo, http, makefile]} />
                     <ProjectCard name={"Chat-App"} githublink={"https://github.com/totallyrad1/chat-app"} description={chat_app_desc} projectimg={"https://i.imgur.com/gjOniYb.png"} icons={[reactlogo, socketio, css, javascript, nodejs, mongodb]}/>
