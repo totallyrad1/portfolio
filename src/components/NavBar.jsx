@@ -45,7 +45,7 @@ const NavBar = ({introRef, aboutMeRef, projectsRef,footerRef}) => {
 
     useEffect(()=>{
         document.title = activeSection;
-        setNavBarClasses(activeSection === "About Me" || activeSection === "End" ? "NavBar black-nav" : "NavBar white-nav");
+        setNavBarClasses(activeSection === "About Me" || activeSection === "End" ? "NavBar black-nav " : "NavBar white-nav");
         setBlacKOrWhite(activeSection === "About Me" || activeSection === "End" ? "black" : "white");
     }, [activeSection])
 
@@ -54,7 +54,7 @@ const NavBar = ({introRef, aboutMeRef, projectsRef,footerRef}) => {
     return (
         <div className={navBarClasses}>
             {/* <img src={icon} className="navbaricon" /> */}
-            <div className="left-nav-buttons">
+            <div className="left-nav-buttons gap-3 mdl:gap-10 flex">
                 <button className={activeSection  === "Intro" ? "underline" : ""} onClick={() => scrollTo({
                     top: 0,
                     behavior: "smooth"
@@ -68,7 +68,7 @@ const NavBar = ({introRef, aboutMeRef, projectsRef,footerRef}) => {
                 <button className={activeSection  === "End" ? "underline" : ""} onClick={() => scrollToElement(footerRef)}>End
                 </button>
             </div>
-            <div className="left-nav-buttons">
+            <div className="left-nav-buttons gap-3 hidden mdl:gap-10 sm2:flex">
                 <a href="https://github.com/totallyrad1" target="blank">
                     <button>
                         <img src={blackOrWhite === "black" ? github : github_b} className="navbar-icon"></img>
