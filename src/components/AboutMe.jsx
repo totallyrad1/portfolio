@@ -18,7 +18,7 @@ const AboutMe = () => {
             </Reveal>
             <Reveal>
                 <div className="flex justify-center py-3">
-                    <a href="https://github.com/oakoudad/badge42"><img src="https://badge.mediaplus.ma/black/asnaji" alt="asnaji's 42 stats" /></a>
+                    <img src="https://badge.mediaplus.ma/black/asnaji" alt="asnaji's 42 stats" className="w-96 mdl:w-auto" />
                 </div>
             </Reveal>
         </div>
