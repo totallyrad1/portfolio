@@ -25,7 +25,7 @@ const Projects = () => {
     const minishell_desc = "Minishell is a lightweight UNIX shell that interprets and executes commands, supporting features like &&, || operators, input/output redirection, and pipes. It manages environment variables and signal handling, while using an abstract syntax tree (AST) to efficiently parse and execute commands.";
     const cub3d_desc = "cub3D is a 3D game engine project inspired by Wolfenstein 3D, built using ray-casting techniques. It allows for rendering 3D environments from 2D maps, handling textures, player movement, and basic collision detection. The project focuses on low-level graphics programming and provides an introduction to building game engines from scratch.";
     const chat_app_desc = "The Chat App is a real-time messaging platform built from the ground up using modern web technologies. It allows users to communicate instantly through Socket.io, which facilitates real-time notifications and live updates. The frontend is implemented with React and styled using React-Bootstrap, offering a sleek and responsive user experience. On the backend, Express.js and Node.js handle routing, API calls, and server-side logic, ensuring efficient data processing. MongoDB is used as the database to store user information, messages, and chat history. This project emphasizes real-time communication, efficient data handling, and seamless user interaction.";
-
+    const inception_desc = "I set up and configured Docker containers to streamline development and deployment processes. By building isolated environments, I improved system efficiency, version control, and scalability. The project helped me gain hands-on experience with containerization and Docker's core concepts, ensuring smooth application deployment and management";
 
     return (
         <div className="text-center overflow-hidden w-full pb-3">
@@ -37,6 +37,7 @@ const Projects = () => {
             <div className="flex justify-center w-full py-12">
                 <div className="projects-div grid lpl:grid-cols-3 mdl:grid-cols-2 sm:grid-cols-1 gap-10">
                     <ProjectCard name={"Webserv"} githublink={"https://github.com/totallyrad1/Webserv"} description={webserv_desc} projectimg={"https://miro.medium.com/v2/resize:fit:1400/format:webp/1*age3Dgxl8sz6LZgDIwOSNQ.png"} icons={[cplus, htmllogo, http, makefile]} />
+                    <ProjectCard name={"Inception"} githublink={"https://github.com/totallyrad1/inception"} description={inception_desc} projectimg={"https://www.pedroalonso.net/static/b3ec2afb11130f982251a7282ede99f2/dac54/docker-thumb.jpg"} icons={[docker, bash]}/>
                     <ProjectCard name={"Chat-App"} githublink={"https://github.com/totallyrad1/chat-app"} description={chat_app_desc} projectimg={"https://i.imgur.com/gjOniYb.png"} icons={[reactlogo, socketio, css, javascript, nodejs, mongodb]}/>
                     <ProjectCard name={"MiniShell"} githublink={"https://github.com/totallyrad1/Minishell"} description={minishell_desc} projectimg={"https://miro.medium.com/v2/da:true/resize:fit:1200/0*NsEzq9V2YGD6ocBH"} icons={[clang, makefile]} />
                     <ProjectCard name={"Cub3d"} githublink={"https://github.com/totallyrad1/cub3D"} description={cub3d_desc} projectimg={"https://miro.medium.com/v2/resize:fit:1200/1*25dBmsNUQps5geRZZZy-uQ.gif"} icons={[clang, makefile]}/>
