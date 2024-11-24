@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 
 const Reveal = ({children, rad = false}) => {
     const ref = useRef(null);
-    const isInView = useInView(ref, {once: false});
+    const isInView = useInView(ref, {once: true});
 
     const mainControls = useAnimation();
     const slideControls = useAnimation();
