@@ -27,7 +27,7 @@ const Skills = () => {
         <div className="text-center overflow-hidden">
             <Reveal>
             <h3 className="text-4xl font-extrabold text-black animate-wiggle animate-infinite animate-duration-[4000ms]">
-                Skills
+                Languages & Frameworks
             </h3>
             </Reveal>
                 <div className="flex py-12 justify-center w-full">

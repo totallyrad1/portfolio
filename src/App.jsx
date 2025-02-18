@@ -12,6 +12,7 @@ import BackToTop from './components/BackToTop'
 import Footer from './components/Footer'
 import WhiteTriangle from './components/WhiteTriangle'
 import BlackTriangle from './components/BlackTriangle'
+import SkillsGrid from './components/skills-grid'
 
 function App() {
   const introRef = useRef(null);
@@ -30,7 +31,7 @@ function App() {
         </section>
         <section className='bg-white' ref={aboutMeRef}>
             <AboutMe />
-            <Skills />
+            {/* <SkillsGrid /> */}
             <BlackTriangle />
           {/* <BlackCurve /> */}
         </section>

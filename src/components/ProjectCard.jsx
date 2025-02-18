@@ -1,37 +1,54 @@
 import Reveal from "./Reveal";
+import { Github } from "lucide-react";
+import { Button } from "./ui/Button";
 
-const ProjectCard = ({name, githublink, description, projectimg, icons}) => {
+const ProjectCard = ({name, githublink, description, projectimg, technologies}) => {
     return (
       <Reveal>
-        <a href={githublink} target="blank">
-        <div className="transform hover:md1:scale-110 transition-transform duration-300">
-          <div className="project-card relative flex flex-col my-6 bg-white shadow-sm border border-slate-200 rounded-lg w-96 h-fit flex-grow animate-flip-down animate-duration-[1000ms]">
-              <div className="relative h-56 m-2.5 overflow-hidden text-white rounded-md">
-                <img src={projectimg} alt="card-image" />
-              </div>
-              <div className="p-4">
-                <div className=" mb-2">
-                  <h6 className="text-slate-800 text-xl font-semibold">
-                    {name}
-                  </h6>
-                </div>
+  <div className="relative group">
+        <div className="absolute -inset-0.5 bg-gradient-to-r from-teal-500 to-blue-500 rounded-lg blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200" />
+        <div className="relative flex flex-col md:flex-row gap-6 p-6 bg-zinc-950 border-0">
+          <div className="w-full md:w-1/2">
+            <img
+              src={projectimg}
+              alt={`${name} image`}
+              className="rounded-lg w-full h-auto"
+            />
+          </div>
 
-              <div className="description-div">
-                <p className="text-slate-600 leading-normal font-light">
-                  {description}
-                </p>
+          <div className="w-full md:w-1/2 flex flex-col justify-between">
+            <div className="space-y-4">
+              <h3 className="text-2xl font-bold text-white">{name}</h3>
+              <div className="space-y-2">
+                {description.map((desc, index) => (
+                  <p key={index} className="text-zinc-400 text-sm">
+                    {desc}
+                  </p>
+                ))}
               </div>
+            </div>
+
+            <div className="mt-6">
+              <div className="flex flex-wrap gap-2 mb-4">
+                {technologies.map((tech, index) => (
+                  <div key={index} variant="secondary" className="bg-zinc-800 text-zinc-300 hover:bg-zinc-700 rounded-full p-2">
+                    {tech}
+                  </div>
+                ))}
               </div>
-              <div className="group my-3 inline-flex flex-wrap justify-center items-center gap-2">
-                  {icons && icons.map((icon, index) =>{
-                      return (<button key={index} className="rounded-full pointer-events-none border border-slate-300 p-2.5 text-center text-sm transition-all shadow-sm hover:shadow-lg text-slate-600 hover:text-white hover:bg-slate-800 hover:border-slate-800 focus:text-white focus:bg-slate-800 focus:border-slate-800 active:border-slate-800 active:text-white active:bg-slate-800 disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">
-                          <img  className="w-4 h-4" src={icon} alt="" />
-                      </button>);
-                  })}
-              </div>
-          </div>  
+
+              {githublink !== "" && <div className="flex justify-end">
+                <Button asChild variant="ghost" className="text-white hover:text-white hover:bg-zinc-800">
+                  <a href={githublink} target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                    <Github className="h-5 w-5" />
+                    View Code
+                  </a>
+                </Button>
+              </div>}
+            </div>
+          </div>
         </div>
-        </a>
+      </div>
       </Reveal>
     );
 }

@@ -1,11 +1,10 @@
-import icon from "../assets/totallyrad.gif"
+
 import github from "../assets/github-white.png"
 import github_b from "../assets/github-black-1.png"
 import linkedin from "../assets/linkedin.png"
 import linkedin_b from "../assets/linkedin-black.png"
-import { useInView } from "framer-motion"
 import { useEffect, useState } from "react"
-import { footer } from "framer-motion/client"
+import { Button } from "./ui/Button";
 
 const NavBar = ({introRef, aboutMeRef, projectsRef,footerRef}) => {
     const [activeSection, setActiveSection] = useState("Intro");
@@ -54,19 +53,22 @@ const NavBar = ({introRef, aboutMeRef, projectsRef,footerRef}) => {
     return (
         <div className={navBarClasses}>
             {/* <img src={icon} className="navbaricon" /> */}
-            <div className="left-nav-buttons gap-3 mdl:gap-10 flex">
-                <button className={activeSection  === "Intro" ? "underline" : ""} onClick={() => scrollTo({
+            <div className="left-nav-buttons gap-1 mdl:text-sm mdl:gap-5 flex">
+                <Button className={activeSection  === "Intro" ? "underline bg-black text-white" : "bg-white text-black border-black"} onClick={() => scrollTo({
                     top: 0,
                     behavior: "smooth"
                 })}>
                     Intro
-                </button>
-                <button className={activeSection  === "About Me" ? "underline" : ""} onClick={() => scrollToElement(aboutMeRef)}>About me
-                </button>
-                <button className={activeSection  === "Projects" ? "underline" : ""} onClick={() => scrollToElement(projectsRef)}>Projects
-                </button>
-                <button className={activeSection  === "End" ? "underline" : ""} onClick={() => scrollToElement(footerRef)}>End
-                </button>
+                </Button>
+                <Button className={activeSection  === "About Me" ? "underline bg-black text-white" : "bg-white text-black border-black"} onClick={() => scrollToElement(aboutMeRef)}>About
+                </Button>
+                <Button className={activeSection  === "Projects" ? "underline bg-black text-white" : "bg-white text-black border-black"} onClick={() => scrollToElement(projectsRef)}>Projects
+                </Button>
+                <a href="/resume.pdf" target="blank">
+                    <Button className="bg-gray-100 text-black border-black">
+                        Resume
+                    </Button>
+                </a>
             </div>
             <div className="left-nav-buttons gap-3 hidden mdl:gap-10 sm2:flex">
                 <a href="https://github.com/totallyrad1" target="blank">
