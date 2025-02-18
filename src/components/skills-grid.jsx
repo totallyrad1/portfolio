@@ -2,30 +2,6 @@ import SkillCard from "./SkillCard";
 
 const SkillsGrid = () => {
   const skills = [
-    {
-      title: "React",
-      description: "A library for building dynamic user interfaces—like this website—enabling seamless user experiences.",
-    },
-    {
-      title: "Next.js",
-      description: "A cutting-edge framework for React, streamlining web development with features like server-side rendering.",
-    },
-    {
-      title: "Node.js",
-      description: "A runtime environment for server-side JavaScript, bringing speed and flexibility to backend development.",
-    },
-    {
-      title: "C / C++",
-      description: "Learned at 1337 School, C and C++ helped  my problem-solving skills and build efficient applications.",
-    },
-    {
-      title: "Docker",
-      description: "A containerization tool that simplifies application deployment and ensures scalability across environments.",
-    },
-    {
-      title: "Git & GitHub",
-      description: "A powerful combination for version control and collaborative development, streamlining team workflows.",
-    },
   ];
   
 
