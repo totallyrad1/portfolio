@@ -31,7 +31,7 @@ function App() {
         </section>
         <section className='bg-white' ref={aboutMeRef}>
             <AboutMe />
-            {/* <SkillsGrid /> */}
+            <Skills />
             <BlackTriangle />
           {/* <BlackCurve /> */}
         </section>

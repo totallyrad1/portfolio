@@ -20,31 +20,41 @@ import socketio from "../assets/socketio.png"
 import Reveal from "./Reveal";
 
 const Skills = () => {
-    
-    const iconsArray = [cplus, clang, git, makefile, python, htmllogo, css, javascript, reactlogo, tailwind, linux,socketio, bash, django, docker, nodejs, mongodb];
-    
+    const techStack = [
+        {stackname:"Frontend", techs:["React", "Next.js", "TypeScript", "TailwindCSS", "Redux", "GraphQL"]},
+        {stackname:"Backend", techs:["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB"]},
+        {stackname:"Languages", techs:["C", "C++", "Python", "JavaScript ES6", "Typescript"]},
+        {stackname:"DevOps", techs:["Docker", "Git", "Linux", "Nginx"]},
+        {stackname:"Tools", techs:["VS Code", "Postman", "Figma", "Jest", "GitHub", "Vercel"]},
+
+    ]
+  
     return (
-        <div className="text-center overflow-hidden">
-            <Reveal>
-            <h3 className="text-4xl font-extrabold text-black animate-wiggle animate-infinite animate-duration-[4000ms]">
-                Languages & Frameworks
-            </h3>
-            </Reveal>
-                <div className="flex py-12 justify-center w-full">
-                    <div className="projects-div grid lpl:grid-cols-9 mdl:grid-cols-7 sm:grid-cols-5 smallest:grid-cols-3 gap-10 w-full">
-                        {iconsArray && iconsArray.map((icon, index)=>{
-                            return  (
-                                <Reveal rad={true} key={index}>
-                                    <span className="text-4xl mx-0">
-                                        <img src={icon} className="marquee-element transform hover:scale-100 transition-transform duration-300"/>
-                                        </span>
-                                </Reveal>
-                                )
-                        })}
-                    </div>
+      <div className="w-full max-w-5xl mx-auto p-6 space-y-8">
+        <h1 className="text-4xl font-bold text-center mb-8">Tech Stack</h1>
+        <div className="grid md:grid-cols-2 gap-6">
+          {techStack.map((u , index) => (
+            <div key={index} className="bg-zinc-950 border-zinc-800 p-4 rounded-xl">
+              <h1>
+                <div className="text-xl text-white pb-4">{u.stackname}</div>
+              </h1>
+              <div>
+                <div className="flex flex-wrap gap-2">
+                  {u.techs.map((tech) => (
+                    <span
+                      key={tech}
+                      className="px-3 py-1 rounded-full bg-zinc-800 text-zinc-200 text-sm hover:bg-zinc-700 transition-colors"
+                    >
+                      {tech}
+                    </span>
+                  ))}
                 </div>
+              </div>
+            </div>
+          ))}
         </div>
-    );
-}
+      </div>
+    )
+  }
  
 export default Skills;
