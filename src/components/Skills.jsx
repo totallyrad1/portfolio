@@ -25,7 +25,7 @@ const Skills = () => {
         {stackname:"Backend", techs:["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB"]},
         {stackname:"Languages", techs:["C", "C++", "Python", "JavaScript ES6", "Typescript"]},
         {stackname:"DevOps", techs:["Docker", "Git", "Linux", "Nginx"]},
-        {stackname:"Tools", techs:["VS Code", "Postman", "Figma", "Jest", "GitHub", "Vercel"]},
+        {stackname:"Tools", techs:["VS Code", "Postman", "Figma", "GitHub", "Vercel"]},
 
     ]
   
