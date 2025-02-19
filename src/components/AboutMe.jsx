@@ -3,7 +3,7 @@ import Reveal from "./Reveal";
 const AboutMe = () => {
     return (<div className="aboutme-div overflow-hidden">
         <Reveal>
-            <h5 className="pb-3 text-4xl font-extrabold text-black animate-wiggle animate-infinite animate-duration-[4000ms]">
+            <h5 className="pb-3 text-4xl font-extrabold text-black">
                     About ME
             </h5>
         </Reveal>

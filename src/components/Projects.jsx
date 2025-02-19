@@ -44,7 +44,7 @@ const Projects = () => {
       {
         name: "Real-Time Chat Application",
         description: [
-        "Developed a secure, responsive web application with user management, authentication (JWT, 2FA), and a dynamic dashboard using Next.js, Tailwind CSS, Django, Django Channels, PostgreSQL, and Redis cache. Ensured real-time communication and enhanced security through advanced authentication methods.",
+        "Built a full-stack chat application using React.js, Node.js, Express.js, MongoDB, and Tailwind CSS. Implemented JWT authentication for secure access, real-time messaging, and used Framer Motion for engaging UI animations.",
         ],
         projectimg: "https://i.imgur.com/gjOniYb.png",
         githublink: "https://github.com/totallyrad1/Real-Time-Chat-Application",
@@ -81,7 +81,7 @@ const Projects = () => {
 
     return (
         <div className="bg-black min-h-screen py-12">
-            <h3 className="text-4xl font-extrabold text-white animate-wiggle animate-infinite animate-duration-[4000ms] text-center pb-10">
+            <h3 className="text-4xl font-extrabold text-white text-center pb-10">
                 Projects
             </h3>
           <div className="container mx-auto px-4">
