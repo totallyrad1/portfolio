@@ -15,16 +15,13 @@ const NavBar = ({introRef, aboutMeRef, projectsRef,footerRef}) => {
         const introRect = introRef.current.getBoundingClientRect();
         const aboutMeRect = aboutMeRef.current.getBoundingClientRect();
         const projectsRect = projectsRef.current.getBoundingClientRect();
-        const footerRect = footerRef.current.getBoundingClientRect();
 
         if (introRect.top >= 0 && introRect.top < window.innerHeight) {
             setActiveSection("Intro");
         } else if (aboutMeRect.top >= 0 && aboutMeRect.top < window.innerHeight) {
             setActiveSection("About Me");
-        } else if (projectsRect.top >= 0 && projectsRect.top < window.innerHeight) {
+        } else{
             setActiveSection("Projects");
-        }else{
-            setActiveSection("End");
         }
     };
 

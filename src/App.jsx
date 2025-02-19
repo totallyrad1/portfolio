@@ -22,14 +22,14 @@ function App() {
 
   return (
     <>
-      <NavBar introRef={introRef} aboutMeRef={aboutMeRef} projectsRef={projectsRef} footerRef={footerRef}/>
+      <NavBar introRef={introRef} aboutMeRef={aboutMeRef} projectsRef={projectsRef}/>
       <BackToTop />
         <section className='bg-black p-0 m-0' ref={introRef}>
           <Intro aboutMeRef={aboutMeRef}/>
           <WhiteTriangle />
           {/* <WhiteCurve /> */}
         </section>
-        <section className='bg-white' ref={aboutMeRef}>
+        <section className='bg-white min-h-screen' ref={aboutMeRef}>
             <AboutMe />
             <Skills />
             <BlackTriangle />
