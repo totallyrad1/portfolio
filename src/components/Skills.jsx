@@ -21,7 +21,7 @@ import Reveal from "./Reveal";
 
 const Skills = () => {
     const techStack = [
-        {stackname:"Frontend", techs:["React", "Next.js", "TypeScript", "TailwindCSS", "Redux", "GraphQL"]},
+        {stackname:"Frontend", techs:["React", "Next.js", "TypeScript", "TailwindCSS", "Redux"]},
         {stackname:"Backend", techs:["Node.js", "Express", "Python", "Django", "PostgreSQL", "MongoDB"]},
         {stackname:"Languages", techs:["C", "C++", "Python", "JavaScript ES6", "Typescript"]},
         {stackname:"DevOps", techs:["Docker", "Git", "Linux", "Nginx"]},
